@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-right: 30px;
+    margin-left: 20px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 40px;
+}
+
+.hamburger--menu {
+    width: 45px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    right: 5%;
+    cursor: pointer;
+}
+
+.line {
+    height: 2px;
+    width: 38px;
+    background-color: rgb(255, 255, 255);
+}
+
+.hamburger--menu:hover .line {
+    background-color: rgb(255, 188, 188);
+}
+
+.nav--list {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    visibility: hidden;
+}
+
+.nav--list--hidden {
+    /* visibility: hidden; */
+}
+
+.nav--list a {
+    display: none;
+}
+
+.nav--list-afterclick {
+    visibility: visible;
+}
+
+.nav--list a:hover {
+    background-color: rgb(255, 188, 188);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.active {
+    visibility: visible;
+}
